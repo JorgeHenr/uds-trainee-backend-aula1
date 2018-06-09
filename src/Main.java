@@ -25,8 +25,11 @@ public class Main {
                 return "X";
             default:
                 return ("número inválido, digite um número de 1 a 10.");
+
         }
     }
+
+
 
     public static void main(String[] args){
         System.out.println("Hello World");
@@ -73,6 +76,65 @@ public class Main {
         System.out.println("digite um número:");
         int numero = scanner.nextInt();
         System.out.println(converterDecimalParaRomano(numero));// invocando função exercicio hardcore 1
+
+        for ( int i = 1; i <= 10; i++) {
+            String valorConvertido = converterDecimalParaRomano(i);
+            System.out.println(valorConvertido);
+        }
+
+        int i = 1;//
+        while (i<= 10) {
+            String valorConvertido = converterDecimalParaRomano(i);
+            System.out.println(valorConvertido);
+            i++;
+        }
+
+
+                System.out.println("MENU");
+                System.out.println("[1] Pistolas");
+                System.out.println("[2] Pesadas");
+                System.out.println("[3] Submetralhadoras");
+                System.out.println("[4] Rifles");
+                System.out.println("[5] Diversos");
+                int menu = scanner.nextInt();
+            switch (menu){
+                case 1 :
+                    System.out.println("Pistolas");
+                    System.out.println("[1] USP $200");
+                    System.out.println("[2] Glock $200");
+                    System.out.println("[3] Desert Eagle $700");
+                    System.out.println("[0] Voltar");
+                    break;
+                case 2 :
+                    System.out.println("Pesadas");
+                    System.out.println("[1] Shotgun $500");
+                    System.out.println("[2] Shotgun Auto $700");
+                    System.out.println("[3] M-249 $1200");
+                    System.out.println("[0] Voltar");
+                    break;
+                case 3 :
+                    System.out.println("Submetralhadoras");
+                    System.out.println("[1] Micro Uzi $300");
+                    System.out.println("[2] UMP 45 $350");
+                    System.out.println("[3] P-90 $noob");
+                    System.out.println("[0] Voltar");
+                    break;
+                case 4 :
+                    System.out.println("Rifles");
+                    System.out.println("[1] M4A4 $ 950");
+                    System.out.println("[2] AK 47 $ 900");
+                    System.out.println("[3] AWP $ 1300");
+                    System.out.println("[0] Voltar");
+                    break;
+                case 5 :
+                    System.out.println("Diversos");
+                    System.out.println("[1] Granada de Fragmentação $ 100");
+                    System.out.println("[2] Granada de Fumaça $ 100");
+                    System.out.println("[3] Colete + Capacete $200");
+                    System.out.println("[0] Voltar");
+                    break;
+            }
     }
 }
-
+// http://respostas.guj.com.br/233-como-retornar-ao-menu-principal
+// http://www.javaprogressivo.net/2012/09/aplicativo-menu-simples-usando-metodos.html
