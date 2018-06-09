@@ -31,7 +31,7 @@ public class Main {
     public static void main(String[] args){
         System.out.println("Hello World");
         String nome = "Jorge Henrique Carvalho";
-        Integer idade = 22;
+        Integer idade = 12;
         Boolean sexoFeminino = false;
         Double peso = 72.5;
         System.out.println ("Olá, meu nome é " +nome+ " tenho " +idade+ " anos de idade. ");
